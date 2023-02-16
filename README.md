@@ -2,8 +2,8 @@
 
 > Application **frontend**, ci-dessous des informations sur la stack avec un lien vers des docs
 
-- **[Angular](https://v12.angular.io/docs)** (14.x)
-- **[Angular Material UI](https://v12.material.angular.io)** (14.x)
+- **[Angular](https://v14.angular.io/docs)** (14.x)
+- **[Angular Material UI](https://v14.material.angular.io/)** (14.x)
 - **[Angular Flex Layout](https://github.com/angular/flex-layout)** (11.x)
 
 ### Pré-requis
