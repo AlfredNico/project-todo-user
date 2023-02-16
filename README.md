@@ -17,8 +17,12 @@
 
 ### Installation des packages
 
-- côté frontend: `cd todo-back && npm install`
+- côté frontend: `cd todo-back && npm install --force`
 - côté backend: `cd todo-front && npm install`
+
+### Démarrer en mode développement
+
+- Utilisez la commande `ng s -o`, et il va ouvrir un navigateur pour se demarrage.
 
 # Backend
 
