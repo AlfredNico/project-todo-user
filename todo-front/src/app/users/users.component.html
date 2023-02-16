@@ -60,20 +60,16 @@
         <ng-container matColumnDef="created_at">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Creer le</th>
           <td mat-cell *matCellDef="let el">
-            {{ el.createdAt | date : "dd/MM/yy à HH:mm" : "fr-FR" }}
+            {{ el.createdAt | date : "dd/MM/yyyy à HH:mm" : "fr-FR" }}
           </td>
         </ng-container>
 
         <ng-container matColumnDef="updated_at" class="w-0">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Modifier le</th>
           <td mat-cell *matCellDef="let el" class="">
-            {{ el.updatedAt | date : "dd/MM/yy à HH:mm" : "fr-FR" }}
+            {{ el.updatedAt | date : "dd/MM/yyyy à HH:mm" : "fr-FR" }}
           </td>
         </ng-container>
-
-        <!-- <td mat-cell *matCellDef="let benefice;">
-        {{ benefice.createdAt | date:'dd/MM/yy à HH:mm':'fr-FR' }}
-    </td> -->
 
         <ng-container matColumnDef="action">
           <th mat-header-cell *matHeaderCellDef>Actions</th>
