@@ -22,7 +22,7 @@
 
 # Backend
 
-Avant de lancer ce projet, assuer vous que vous avez déjà installé nodemon,
+Avant de lancer ce projet, assuez-vous que vous avez déjà installé `nodemon`,
 si n'est pas le cas, il faut lancer ce ligne de commande:
 `npm i -g nodemon`:
 
