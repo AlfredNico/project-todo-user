@@ -42,3 +42,7 @@ si n'est pas le cas, il faut lancer ce ligne de commande:
 ```run script
 npm run start:dev
 ```
+
+### Remarque
+
+La base est créer automatique des que ce projet est lancer !
