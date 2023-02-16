@@ -10,7 +10,6 @@ import { SnackBarService } from 'src/app/shared/services/snack-bar.service';
   styles: [],
 })
 export class AddComponent implements OnInit {
-
   hidePwd = true;
 
   public form = this.fb.group({

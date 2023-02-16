@@ -1,0 +1,178 @@
+{
+  "results": [
+      {
+          "gender": "male",
+          "name": {
+              "title": "Monsieur",
+              "first": "Alfonso",
+              "last": "Rolland"
+          },
+          "location": {
+              "street": {
+                  "number": 6815,
+                  "name": "Rue du Dauphiné"
+              },
+              "city": "Zell (Lu)",
+              "state": "Schwyz",
+              "country": "Switzerland",
+              "postcode": 2931,
+              "coordinates": {
+                  "latitude": "-55.0566",
+                  "longitude": "-90.1063"
+              },
+              "timezone": {
+                  "offset": "-7:00",
+                  "description": "Mountain Time (US & Canada)"
+              }
+          },
+          "email": "alfonso.rolland@example.com",
+          "login": {
+              "uuid": "0e2acfa0-3708-4ed6-baba-c9a9362fd2ef",
+              "username": "sadostrich785",
+              "password": "orchard",
+              "salt": "oCcF52xR",
+              "md5": "656f731d49574f49c3b2f07fb0f4b3f5",
+              "sha1": "50bf92c4fd80c3d2ad5a6717219d5be63dc5a821",
+              "sha256": "5cb1f53c95cf868643b0a74a44a9230ffa6a93824af1af85d2f91b9431ab84e4"
+          },
+          "dob": {
+              "date": "1977-02-12T14:08:55.978Z",
+              "age": 43
+          },
+          "registered": {
+              "date": "2013-07-30T20:59:24.925Z",
+              "age": 7
+          },
+          "phone": "077 198 18 93",
+          "cell": "078 739 41 20",
+          "id": {
+              "name": "AVS",
+              "value": "756.2095.5669.53"
+          },
+          "picture": {
+              "large": "https://randomuser.me/api/portraits/men/61.jpg",
+              "medium": "https://randomuser.me/api/portraits/med/men/61.jpg",
+              "thumbnail": "https://randomuser.me/api/portraits/thumb/men/61.jpg"
+          },
+          "nat": "CH"
+      },
+      {
+          "gender": "female",
+          "name": {
+              "title": "Mrs",
+              "first": "Evelyn",
+              "last": "Clark"
+          },
+          "location": {
+              "street": {
+                  "number": 6897,
+                  "name": "Hickory Creek Dr"
+              },
+              "city": "Warren",
+              "state": "Virginia",
+              "country": "United States",
+              "postcode": 54113,
+              "coordinates": {
+                  "latitude": "-21.7277",
+                  "longitude": "106.2124"
+              },
+              "timezone": {
+                  "offset": "+5:00",
+                  "description": "Ekaterinburg, Islamabad, Karachi, Tashkent"
+              }
+          },
+          "email": "evelyn.clark@example.com",
+          "login": {
+              "uuid": "c4e72313-1f89-4aaf-96f9-526bb5fe7242",
+              "username": "angrywolf434",
+              "password": "child",
+              "salt": "iskewOMd",
+              "md5": "f46e0d7c570a4b733cfbb2a62ab3a57c",
+              "sha1": "709a9326dae1357c583a77e0607c288ece5a61ba",
+              "sha256": "688b3b328e33f6c65f99a8395b9e21b44ffbc2e64eee98a4eea8dbb48bf2df1e"
+          },
+          "dob": {
+              "date": "1978-09-26T18:50:32.968Z",
+              "age": 42
+          },
+          "registered": {
+              "date": "2018-08-11T00:25:51.881Z",
+              "age": 2
+          },
+          "phone": "(443)-718-9290",
+          "cell": "(935)-256-9684",
+          "id": {
+              "name": "SSN",
+              "value": "663-50-0214"
+          },
+          "picture": {
+              "large": "https://randomuser.me/api/portraits/women/49.jpg",
+              "medium": "https://randomuser.me/api/portraits/med/women/49.jpg",
+              "thumbnail": "https://randomuser.me/api/portraits/thumb/women/49.jpg"
+          },
+          "nat": "US"
+      },
+      {
+          "gender": "male",
+          "name": {
+              "title": "Mr",
+              "first": "Ege",
+              "last": "Velioğlu"
+          },
+          "location": {
+              "street": {
+                  "number": 1697,
+                  "name": "Tunalı Hilmi Cd"
+              },
+              "city": "Antalya",
+              "state": "Samsun",
+              "country": "Turkey",
+              "postcode": 52663,
+              "coordinates": {
+                  "latitude": "-77.3499",
+                  "longitude": "-49.6231"
+              },
+              "timezone": {
+                  "offset": "-1:00",
+                  "description": "Azores, Cape Verde Islands"
+              }
+          },
+          "email": "ege.velioglu@example.com",
+          "login": {
+              "uuid": "a9030e5a-e877-45b2-9e4f-1e6839bfae79",
+              "username": "angryelephant410",
+              "password": "nacked",
+              "salt": "eb0XssLc",
+              "md5": "5aeb23189bf13fa953fdfad1958cccf6",
+              "sha1": "68653b77ec1b2d414c31c1dbe4f99135d8b658e0",
+              "sha256": "22a3952d8ff16eeb3eeeded8a96e639395dbae95a77feccc283e437f8bfdae0b"
+          },
+          "dob": {
+              "date": "1957-12-20T20:22:09.212Z",
+              "age": 63
+          },
+          "registered": {
+              "date": "2003-04-04T00:08:22.410Z",
+              "age": 17
+          },
+          "phone": "(529)-550-5538",
+          "cell": "(675)-977-6119",
+          "id": {
+              "name": "",
+              "value": null
+          },
+          "picture": {
+              "large": "https://randomuser.me/api/portraits/men/8.jpg",
+              "medium": "https://randomuser.me/api/portraits/med/men/8.jpg",
+              "thumbnail": "https://randomuser.me/api/portraits/thumb/men/8.jpg"
+          },
+          "nat": "TR"
+      }
+  ],
+  "info": {
+      "seed": "bea0b84f370622c5",
+      "results": 3,
+      "page": 1,
+      "version": "1.3"
+  }
+}
