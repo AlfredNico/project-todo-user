@@ -8,7 +8,7 @@
 
 ### Pré-requis
 
-- Une version de **Node LTS** _(14 recommandé)_
+- Une version de **Node LTS** _(16 recommandé)_
 - **Angular CLI** installé de manière globale : `npm install -g @angular/cli`
 
 ### Clonage du repository
