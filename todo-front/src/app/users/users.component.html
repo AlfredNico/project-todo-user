@@ -1,0 +1,103 @@
+<div>
+  <mat-toolbar>
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>TODO LIST</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+
+  <div
+    class="my-2 p-3 border rounded"
+    fxLayout="column"
+    fxLayoutAlign="start center"
+  >
+    <div class="bg-light w-100" fxLayout="column" fxLayoutAlign="center center">
+      <h2 class="text-uppercase">Gestion des utilisateurs</h2>
+      <div class="w-100" fxLayout="row" fxLayoutAlign="end center">
+        <mat-form-field appearance="outline">
+          <mat-label>Recherche</mat-label>
+          <input
+            matInput
+            [formControl]="filter"
+            (keyup)="applyFilter($event)"
+            placeholder="Ex. Mia"
+            #input
+          />
+        </mat-form-field>
+        <button
+          (click)="update()"
+          color="primary"
+          id="add"
+          class="px-5 ml-4"
+          mat-raised-button
+        >
+          Ajouter
+        </button>
+      </div>
+    </div>
+    <div class="bg-white p-3 w-100 border">
+      <table mat-table [dataSource]="dataSource" class="w-100" matSort>
+        <ng-container matColumnDef="username">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>username</th>
+          <td mat-cell *matCellDef="let el">{{ el.username }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="firstname">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Nom</th>
+          <td mat-cell *matCellDef="let el">{{ el.firstname }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="lastname">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Prènom</th>
+          <td mat-cell *matCellDef="let el">{{ el.lastname }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="created_at">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Creer le</th>
+          <td mat-cell *matCellDef="let el">
+            {{ el.createdAt | date : "dd/MM/yy à HH:mm" : "fr-FR" }}
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="updated_at" class="w-0">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Modifier le</th>
+          <td mat-cell *matCellDef="let el" class="">
+            {{ el.updatedAt | date : "dd/MM/yy à HH:mm" : "fr-FR" }}
+          </td>
+        </ng-container>
+
+        <!-- <td mat-cell *matCellDef="let benefice;">
+        {{ benefice.createdAt | date:'dd/MM/yy à HH:mm':'fr-FR' }}
+    </td> -->
+
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef>Actions</th>
+          <td mat-cell *matCellDef="let el">
+            <button mat-mini-fab (click)="update(el)" color="primary">
+              <mat-icon>edit_square</mat-icon>
+            </button>
+            <button mat-mini-fab (click)="remove(el.id)" color="warn">
+              <mat-icon>close</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell text-center" colspan="6">
+            Aucun data trouvé: "{{ input.value }}"
+          </td>
+        </tr>
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+    </div>
+  </div>
+</div>

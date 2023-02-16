@@ -1,0 +1,73 @@
+<form [formGroup]="form">
+  <h2 mat-dialog-title *ngIf="data.action === 'add'">Ajoutr utilisateur</h2>
+  <h2 mat-dialog-title *ngIf="data.action === 'edit'">Modifier utilisateur</h2>
+  <div mat-dialog-content>
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Username</mat-label>
+      <input matInput formControlName="username" />
+      <mat-error
+        *ngIf="
+          form.get('username')?.errors?.['required'] && form.get('username')?.touched
+        "
+      >
+        Username requis
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="firstname" />
+      <mat-error
+        *ngIf="
+          form.get('firstname')?.errors?.['required'] && form.get('firstname')?.touched
+        "
+      >
+        Nom requis
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Prènom</mat-label>
+      <input matInput formControlName="lastname" />
+      <mat-error
+        *ngIf="
+          form.get('lastname')?.errors?.['required'] && form.get('lastname')?.touched
+        "
+      >
+        Prènom requis
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Mot de passe</mat-label>
+      <input
+        matInput
+        formControlName="password"
+        [type]="hidePwd ? 'password' : 'text'"
+        autocomplete="off"
+      />
+      <mat-icon matSuffix (click)="hidePwd = !hidePwd">{{
+        hidePwd ? "visibility_off" : "visibility"
+      }}</mat-icon>
+      <mat-error
+        *ngIf="
+          form.get('password')?.errors?.['minlength']
+        "
+      >
+        Mot de passe devra 6 caracteres mininum
+      </mat-error>
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions fxLayoutAlign="end center">
+    <button type="reset" mat-stroked-button mat-dialog-close>Annuler</button>
+    <button
+      type="submit"
+      mat-flat-button
+      color="primary"
+      (click)="save()"
+      [disabled]="form.invalid"
+    >
+      Enregistrer
+    </button>
+  </div>
+</form>
