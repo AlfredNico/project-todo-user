@@ -31,14 +31,14 @@
     </mat-form-field>
 
     <mat-form-field appearance="outline" class="w-100">
-      <mat-label>Prènom</mat-label>
+      <mat-label>Prénom</mat-label>
       <input matInput formControlName="lastname" />
       <mat-error
         *ngIf="
           form.get('lastname')?.errors?.['required'] && form.get('lastname')?.touched
         "
       >
-        Prènom requis
+        Prénom requis
       </mat-error>
     </mat-form-field>
 
@@ -60,6 +60,30 @@
       >
         Mot de passe devra 6 caracteres mininum
       </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Confirmatin mot de passe</mat-label>
+      <input
+        matInput
+        [type]="hidePwd ? 'password' : 'text'"
+        formControlName="confirm_password"
+        autocomplete="off"
+      />
+      <mat-icon matSuffix (click)="hidePwd = !hidePwd">{{
+        hidePwd ? "visibility_off" : "visibility"
+      }}</mat-icon>
+      <mat-error *ngIf="form.get( 'confirm_password')?.errors?.['minlength']">
+        Confirmation mot de passe devra 6 caracteres mininum</mat-error
+      >
+      <mat-error
+        *ngIf="
+          form.get('confirm_password')?.touched &&
+          form.get('confirm_password')?.errors?.['passwordMismatch']
+        "
+      >
+        Confirmation mot de passe incorrect</mat-error
+      >
     </mat-form-field>
   </div>
   <div mat-dialog-actions fxLayoutAlign="end center">
