@@ -43,6 +43,25 @@ si n'est pas le cas, il faut lancer ce ligne de commande:
 npm run start:dev
 ```
 
+
+
+# Base de donnée
+
+Si vous souhaitez développer avec un serveur backend de développement en local, il faudra configurer dans le fichier backend `config.json`:
+
+```
+{
+    "database": {
+        "host": "localhost",
+        "port": PORT_DATABASE,
+        "user": "USERNAME_DATABASE",
+        "password": "PASSWORD",
+        "database": "DATABASE_NAME"
+    },
+    "secret": "TODO_FOR_CRUD_USER"
+}
+```
+
 ### Remarque
 
 La base est créer automatique des que ce projet est lancer !
