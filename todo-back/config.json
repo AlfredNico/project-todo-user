@@ -6,5 +6,5 @@
         "password": "",
         "database": "todo_db"
     },
-    "secret": "TODO FOR CRUD USER"
+    "secret": "TODO_FOR_CRUD_USER"
 }
